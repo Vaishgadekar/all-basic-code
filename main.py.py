@@ -32,7 +32,7 @@ def num_Printing(no):
         else:
             print(i)
 
-print(num_Printing(50))
+#print(num_Printing(50))
 
 # print star pattern
 
@@ -55,3 +55,48 @@ def trangle(n):
 
 print(trangle(5))
     
+# print no 1 to 10 using while loop 
+
+n=1
+while n<= 10:
+    print(n)
+    n += 1
+
+# by defining function
+def num(no):
+    n=1
+    while n<no:
+        print(n)
+        n+=1
+
+print(num(12))
+
+
+# sum of  n no 
+def sum(n):
+    total = 0
+    i = 1
+    while 1 <=n:
+        total += i
+        i +=1
+    return total
+print(sum(10))
+
+
+# palindrome 
+def palindrome(str):
+    return str== str[::-1]
+
+palindrome(12453)
+# sort list without sort function 
+
+def sort_list(num):
+    sor_list = []
+    for i in num:
+        if i not in sor_list:
+            sor_list.append(i)
+    sor_list.sort()
+    return sor_list
+
+print(sort_list([1,5,6,8,4,7,3,5,9,2]))
+
